@@ -1,0 +1,433 @@
+/**
+ * File              : css/custom.css
+ * Author            : Marcos Horro <marcos.horro@udc.gal>
+ * Last Modified Date: Mar 18 Set 2018 16:01:31 CEST
+ */
+/* bib-publication-list styles
+-------------------------------------------------- */
+span.undefined { color:red; }
+.bibtable {width: auto 100%; height: auto scroll; margin: 0 auto; clear: both;}
+.bibchart { width: 100%; height: 100px; margin-bottom: 20px;}
+.clear {clear:both;}
+.year { position: relative; height: 100%; border-bottom: 1px solid black; display: inline-block;}
+.yearlabel { position: absolute; bottom: -20px; text-align: center; width: 100%; font-size: smaller;}
+.pub { border: 1px solid white; background-color: #eee; }
+.inproceedings { background-color: #ccf; }
+.article { background-color: #beb; }
+.inbook { background-color: #eaa; }
+.phdthesis { background-color: #999; }
+.unpublished { background-color: #eae; }
+.mastersthesis { background-color: #eea; }
+.techreport { background-color: #b77; }
+.proceedings { background-color: #9494ff; }
+.book { background-color: #ed7878; }
+.legend .pub { width: 10px; height: 10px; display: inline-block; margin: 0 5px 0 15px;}
+.legend { margin-bottom: 24px; text-align: center; width: 100%;}
+table.display thead th { padding: 3px 18px 3px 10px; border-bottom: 1px solid black; border-top: 1px solid black; font-weight: bold; cursor: pointer; cursor: hand; }
+table.display tfoot th { padding: 3px 10px; border-top: 1px solid black; font-weight: bold; }
+table.display td { padding: 3px 10px; }
+table.display td.center { text-align: center; }
+table.display { margin-top: 24px; }
+.sorting_asc { background: url('lib/images/sort_asc.png') no-repeat center right; }
+.sorting_desc { background: url('lib/images/sort_desc.png') no-repeat center right; }
+.sorting { background: url('lib/images/sort_both.png') no-repeat center right; }
+.sorting_asc_disabled { background: url('lib/images/sort_asc_disabled.png') no-repeat center right; }
+.sorting_desc_disabled { background: url('lib/images/sort_desc_disabled.png') no-repeat center right; }
+tr.odd { background-color: #eee; }
+tr.even { background-color: white; }
+div.hidden { display: none;}
+div.bibinfo { width: 80%; position: fixed; top: 100px; left: 10%; background-color: #bbb; border: 3px solid #fff; padding: 10px; z-index: 10000;}
+#shutter { background-color: #555; opacity: 0.7; width:100%; height: 100%; position: fixed; top: 0; left:0; z-index: 20;}
+a.bibclose {
+  background-color: #BBBBBB;
+  border: 3px solid #FFFFFF;
+  color: black;
+  float: left;
+  font-size: 10px;
+  height: 25px;
+  padding: 3px;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  width: 25px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  -o-border-radius:15px;
+  border-radius:15px;
+  top: -20px;
+  left: -20px;
+}
+div.bibinfo pre { clear:both; }
+
+/* Custom styles
+-------------------------------------------------- */
+.social-icons li {
+  display: inline;
+}
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  text-indent: -9999px;
+}
+.twitter {
+  background-image: url(../img/twitter.png);
+  width: 22px;
+  height: 22px;
+}
+.facebook {
+  background-image: url(../img/facebook.png);
+  width: 22px;
+  height: 22px;
+}
+.linkedin {
+  background-image: url(../img/linkedin.png);
+  width: 22px;
+  height: 22px;
+}
+.orcid {
+  background-image: url(../img/orcid.png);
+  width: 22px;
+  height: 22px;
+}
+.researchgate {
+  background-image: url(../img/researchgate.png);
+  width: 22px;
+  height: 22px;
+}
+.scholar {
+  background-image: url(../img/scholar.png);
+  width: 22px;
+  height: 22px;
+}
+.instagram {
+  background-image: url(../img/instagram.png);
+  width: 22px;
+  height: 22px;
+}
+.flickr {
+  background-image: url(../img/flickr.png);
+  width: 22px;
+  height: 22px;
+}
+
+.bg-udc {
+  background-color: #6d0a49 !important;
+}
+
+.display-5{font-size:2rem;font-weight:300;line-height:1.2}
+.display-6{font-size:1.4rem;font-weight:300;line-height:1.2}
+.navbar-toggler {
+  text-align: center;
+
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+.nav-link:hover{
+  color: #ffa8d5;
+}
+
+a {
+  color: #e10879;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/* timelinelist
+-----------------------------------------------------*/
+
+ul.clist {
+    list-style-type: none;
+    position: relative;
+    z-index: 10;
+}
+ul.clist > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.clist > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #e10879;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+/* timelinelist
+-----------------------------------------------------*/
+
+ul.timelinelist {
+    list-style-type: none;
+    position: relative;
+    z-index: 10;
+}
+ul.timelinelist:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timelinelist > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timelinelist > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #e10879;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+    .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #eeeeee;
+        left: 50%;
+        margin-left: -1.5px;
+    }
+
+    .timeline > li {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+        .timeline > li:before,
+        .timeline > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline > li:after {
+            clear: both;
+        }
+
+        .timeline > li:before,
+        .timeline > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline > li:after {
+            clear: both;
+        }
+
+        .timeline > li > .timeline-panel {
+            width: 46%;
+            float: left;
+            border: 1px solid #d4d4d4;
+            border-radius: 2px;
+            padding: 20px;
+            position: relative;
+            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        }
+
+            .timeline > li > .timeline-panel:before {
+                position: absolute;
+                top: 26px;
+                right: -15px;
+                display: inline-block;
+                border-top: 15px solid transparent;
+                border-left: 15px solid #ccc;
+                border-right: 0 solid #ccc;
+                border-bottom: 15px solid transparent;
+                content: " ";
+            }
+
+            .timeline > li > .timeline-panel:after {
+                position: absolute;
+                top: 27px;
+                right: -14px;
+                display: inline-block;
+                border-top: 14px solid transparent;
+                border-left: 14px solid #fff;
+                border-right: 0 solid #fff;
+                border-bottom: 14px solid transparent;
+                content: " ";
+            }
+
+        .timeline > li > .timeline-badge {
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.4em;
+            text-align: center;
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            margin-left: -25px;
+            background-color: #999999;
+            z-index: 100;
+            border-top-right-radius: 50%;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .timeline > li.timeline-inverted > .timeline-panel {
+            float: right;
+        }
+
+            .timeline > li.timeline-inverted > .timeline-panel:before {
+                border-left-width: 0;
+                border-right-width: 15px;
+                left: -15px;
+                right: auto;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel:after {
+                border-left-width: 0;
+                border-right-width: 14px;
+                left: -14px;
+                right: auto;
+            }
+
+.timeline-badge.primary {
+    background-color: #2e6da4 !important;
+}
+
+.timeline-badge.success {
+    background-color: #3f903f !important;
+}
+
+.timeline-badge.warning {
+    background-color: #f0ad4e !important;
+}
+
+.timeline-badge.danger {
+    background-color: #d9534f !important;
+}
+
+.timeline-badge.info {
+    background-color: #5bc0de !important;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-subtitle {
+    margin-top: 0;
+    color: inherit;
+    font-weight: 300;
+}
+
+.timeline-subsubtitle {
+    margin-top: 0;
+    color: inherit;
+    font-weight: 200;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+}
+
+    .timeline-body > p + p {
+        margin-top: 5px;
+    }
+
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 40px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    ul.timeline > li > .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+
+        ul.timeline > li > .timeline-panel:before {
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
+
+        ul.timeline > li > .timeline-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+}
