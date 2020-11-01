@@ -1,603 +1,293 @@
 <!DOCTYPE html>
+<!--
+ - File              : index.html
+ - Author            : Marcos Horro <marcos.horro@udc.gal>
+ - Last Modified Date: Mar 18 Set 2018 15:46:32 CEST
+-->
 <html lang="en">
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Página personal Marcos Horro - Grupo de Arquitectura de Computadores (GAC)">
+    <meta name="author" content="Grupo de Arquitectura de Computadores">
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Purva Singh</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <script>
-            $(function(){
-              $("#includedContent").load("timeline.html");
-            });
-        </script>
+    <title>Marcos Horro</title>
 
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Hello there!</a>
-                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#news">News</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#publications">Publications</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#paintings">Paintings</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead text-center">
-            <p class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/purva_new.png" alt="" />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Purva Singh</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div><br><br>
-                    <div><a href="https://www.kaggle.com/purvasingh"><i class="fab fa-kaggle"></i></a></div>
-                    <div><a href="https://www.kaggle.com/purvasingh"><i class="fab fa-kaggle"></i></a></div>
-                    <div><a href="https://www.kaggle.com/purvasingh"><i class="fab fa-kaggle"></i></a></div>
-                </div>
-            </div>
-        </header>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
 
-        <!-- News Section-->
-        <section class="page-section" id="news">
-            <div class="container">
-                <!-- News Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase">News</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- News Section Content-->
-                <div id="includedContent"></div>
-                <!-- News Section Ends -->
-            </div>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md fixed-top bg-dark bg-udc">
+        <div class="container">
+          <a class="navbar-brand" href="https://www.udc.gal/">
+            <img src="img/udc.png" width="200" height="30" alt="UDC">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i></button>
+    		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+              </li>
+                <a class="nav-link" href="#teach">Teaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pubs">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Trajectory</a>
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand" href="http://gac.udc.es/inicio.html">
+    			    <img src="img/gacw.png" width="162" height="30" alt="GAC">
+          </a>
+        </div>
+    	</nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+    <div class="row">
+      <div class="col-4 mx-auto d-block">
+        <div class="row mt-5 mx-auto d-block text-center">
+          <img src="img/profile.png" class="img-fluid rounded-circle mb-3" alt="Profile picture">
+          <h4>Marcos Horro</h4>
+          <p class="lead">PhD Candidate (<abbr title="FPU fellowship">FPU</abbr>)</p>
+          <p class="font-weight-light">University of A Coruña (<a
+href="https://www.udc.gal/"><abbr title="University of
+A Coruña">UDC</abbr></a>)<br>Computer Architecture Group (<a
+href="http://gac.udc.es/" ><abbr title="Computer Architecture Group">GAC</abbr></a>)</p>
+        </div>
+        <hr>
+        <div class="row mx-auto d-block">
+        <p class="lead text-center "><a href="mailto:marcos.horro@udc.gal"><i class="far fa-envelope"></i></a> marcos.horro [at] udc.gal</p>
+        <ul class="social-icons text-center">
+          	<li><a class="scholar" href="https://scholar.google.es/citations?user=MSmk8RAAAAAJ&hl=es&oi=ao" title="Scholar">Scholar</a></li>
+          	<li><a class="orcid" href="https://orcid.org/0000-0002-0184-8527" title="ORCID">ORCID</a></li>
+          	<li><a class="linkedin" href="https://www.linkedin.com/in/marcoshorro/" title="Linkedin">LinkedIn</a></li>
+          	<li><a class="researchgate" href="https://www.researchgate.net/profile/Marcos_Horro_Varela" title="ResearchGate">ResearchGate</a></li>
+          	<li><a class="twitter" href="https://twitter.com/markoshorro" title="Twitter">Twitter</a></li>
+          	<li><a class="instagram" href="https://www.instagram.com/markoshorro/" title="Instagram">Instagram</a></li>
+          	<li><a class="flickr" href="https://www.flickr.com/photos/markos-design/" title="Flickr">Flickr</a></li>
+        </ul>
+        <hr>
+        <p class="text-center font-weight-light">
+      	<i class="far fa-flag"></i> Proud <b><a href="https://www.google.es/maps/place/Galicia/@42.7944603,-9.138824,8z/data=!3m1!4b1!4m5!3m4!1s0xd2e7c868908156b:0xe1ac7930138c9642!8m2!3d42.5750554!4d-8.1338558">Galician</a></b>
+      	<br><br>
+
+      	<i class="far fa-user-circle"></i> <a href="http://gac.udc.es/~marcos.horro/cvpage/" alt="CV">Interactive CV</a><br>
+        <i class="fas fa-birthday-cake"></i> Since 1994<br><br>
+        <i class="far fa-futbol"></i>	<a href="https://www.rcdeportivo.es/">Football</a> and <i class="fas fa-motorcycle"></i> <a href="http://www.valentinorossi.com/en/">motorcycle</a><br>
+        <i class="fab fa-blogger"></i> <a href="http://blog.marcoshorro.com/" alt="Blog">Personal blog</a> (spanish)
+        </p>
+        <hr>
+        <p class="text-monospace">+34 881 011 376 (extension 1376)<br>
+        Facultade de Informática<br>Campus Elviña S/N, 15071<br>
+      	Laboratorio 0.2
+        </p>
+        <a href="https://stackoverflow.com/users/2856041/horro">
+    	  <img class="separator" src="https://stackoverflow.com/users/flair/2856041.png" width="208" height="58" alt="profile for horro at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for horro at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+        </a>
+        <hr>
+      </div>
+      </div>
+      <div class="col-8">
+        <section id="projects" class="mt-5">
+          <h3 class="display-5">Projects</h3><hr>
+          <ul class="timelinelist">
+            <li><a href="https://github.com/markoshorro/gem5McPATparse">gem5McPATparse</a> <span class="badge badge-primary">Flex, Bison, C++</span> - translates the output of gem5 to McPAT format</li>
+            <li><a href="https://github.com/markoshorro/gem5-spm">gem5-spm</a> <span class="badge badge-info">C++, Python</span> - implementation of scratchpad memories in gem5 simulator</li>
+            <li><a href="https://bitbucket.org/markoshorro/iconmunicate/src/master/">iConmunicate</a> <span class="badge badge-pill badge-danger">Discontinued</span> <span class="badge badge-success">Android, Nearby, BT</span> - messenger over bluetooth having a gallery of icons</li>
+            <li><a href="https://github.com/markoshorro/look-around">Look Around</a> <span class="badge badge-pill badge-danger">Discontinued</span> <span class="badge badge-success">Android, sensors, Unity, VR</span> - reading QR retrieves information of places of interest, allowing to visualize it using virtual reality through the camera</li>
+            <li><a href="https://github.com/markoshorro/musicsort">MusicSort</a> <span class="badge badge-pill badge-danger">Discontinued</span> <span class="badge badge-info">Python, Django, APIs</span> - retrivies all the information of a set of songs uploaded, such as metadata, album cover, lyrics, etc.</li>
+          </ul>
         </section>
-
-
-        <!-- Projects Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">AI Projects</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" /><br><br>
-                        </div><br>
-                        <h5 style="text-align:center;">Chat Bot</h5>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" /><br><br>
-                        </div><br>
-                        <h5 style="text-align:center;">StockGram for Natural Language Generation</h5>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" /><br><br>
-                        </div><br>
-                        <h5 style="text-align:center;">StockGram for Portfolio Optimization</h5>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" /><br><br>
-                        </div><br>
-                        <h5 style="text-align:center;">Recommendation Engine</h5>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="" /><br><br>
-                        </div><br>
-                        <h5 style="text-align:center;">Covhindia</h5>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" /><br><br>
-                        </div><br>
-                        <h5 style="text-align:center;">Kaggle Notebooks</h5>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" /><br><br>
-                        </div><br>
-                        <h5 style="text-align:center;">StockGram for Portfolio Optimization</h5>
-                    </div>
-                    <!-- Portfolio Item 8-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" /><br><br>
-                        </div><br>
-                        <h5 style="text-align:center;">Natural Language Processing Nanodegree by Udacity</h5>
-                    </div>
-                    <!-- Portfolio Item 9-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" /><br><br>
-                        </div><br>
-                        <h5 style="text-align:center;">AI for Trading Nanodegree by Udacity</h5>
-                    </div>
-                </div>
-            </div>
+        <section id="teach" class="mt-5">
+          <h3 class="display-5">Teaching</h3>
+          <hr>
+          <h4>Course <span class="badge badge-secondary">2018/2019</span></h4>
+          <ul class="clist">
+            <li>Programación Integrativa <a
+href="https://guiadocente.udc.es/guia_docent/index.php?centre=614&ensenyament=614G01&assignatura=614G01049&idioma=cast&any_academic=2018_19"
+class="badge badge-info">Planning</a> <a href="https://moodle.udc.es/course/view.php?id=51658" class="badge
+badge-primary">Moodle</a>
+</li>
+          </ul>
         </section>
-
-        <!-- Publications Section-->
-        <section class="page-section" id="publications">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase">Publications</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <table class="table">
-                  <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">S.No.</th>
-                        <th scope="col">Paper Title</th>
-                        <th scope="col">Authors</th>
-                        <th scope="col">Journal</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Code</th>
-                        <th scope="col">Citations</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                        <td>Intelligent Portfolio Management via NLP Analayis on Financial 10-K Statements, <i>2020</i></td>
-                      <td>P. Singh</td>
-                        <td><a href="http://www.airccse.org/journal/ijaia/ijaia.html">International Journal of Artificial Intelligence and Applications (IJAIA)</a></td>
-                        <td>In Review</td>
-                        <td>0</td>
-                    </tr>
-                  <tr>
-                      <th scope="row">2</th>
-                      <td>Covhindia: Deep Learning Framework for Sentiment Polarity Detection of COVID-19 Tweets in Hindi, <i>2020</i></td>
-                      <td>P. Singh</td>
-                        <td><a href="http://airccse.org/journal/ijnlc/">International Journal of Natural Language Computing (IJNLC)</a></td>
-                        <td>In Review</td>
-                        <td>0</td>
-                    </tr>
-                  <tr>
-                      <th scope="row">3</th>
-                      <td>Deep Reinforcement Learning for Credit Card Fraud Detection, <i>2020</i></td>
-                      <td>P. Singh, Dr. D. P. Acharjya</td>
-                        <td><a href="https://www.springer.com/journal/521">Neural Computing and Applications</a></td>
-                        <td>In Review</td>
-                        <td>0</td>
-                    </tr>
-                  <tr>
-                      <th scope="row">4</th>
-                      <td>StockGram: Deep Learning Model for Digitizing Financial Communications via Natural Language Generation, <i>2020</i></td>
-                      <td>P. Singh</td>
-                        <td><a href="https://aircconline.com/abstract/ijnlc/v9n4/9420ijnlc01.html">International Journal of Natural Language Computing (IJNLC)</a></td>
-                        <td>Published</td>
-                        <td>0</td>
-                    </tr>
-                  <tr>
-                      <th scope="row">5</th>
-                      <td>Compilers used in the Stratosphere Paltform for Big Data Analytics, <i>2020</i></td>
-                      <td>C. Bagchi, K. Chopra, P. Singh, Dr. R. Babu</td>
-                        <td><a href="https://www.ijert.org/compilers-used-in-the-stratosphere-platform-for-big-data-analytics">International Journal of Engineering Research and Technology (IJERT)</a></td>
-                        <td>Published</td>
-                        <td>0</td>
-                    </tr>
-                  <tr>
-                      <th scope="row">6</th>
-                      <td>Survey on MR Image Segmentation using Fuzzy C-Means Algorithm, <i>2017</i></td>
-                      <td>P. Singh, K. Arora, S. Sinha, R. Sathyaraj</td>
-                        <td><a href="https://www.academia.edu/32790156/Survey_on_MR_Image_Segmentation_Using_Fuzzy_C_Means_Algorithm">International Journal of Engineering Research</a></td>
-                        <td>Published</td>
-                        <td>4</td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
+        <section id="pubs" class="mt-5">
+          <h3 class="display-5">Publications</h3>
+          <hr>
+          <table id="pubTable" class="display"></table>
+<pre id="bibtex">
+@misc{horrostudy,
+  title={Study of the Intel Knights Landing (KNL) memory system tradeoffs},
+  author={Horro, Marcos and Rodríguez, Gabriel and Touriño, Juan and Kandemir, Mahmut T},
+  year={2017},
+  publisher={13th International Summer School on Advanced Computer Architecture and Compilation for High-Performance and Embedded Systems (ACACES)}
+},
+@inproceedings{horro2016exploracion,
+  title={Exploración y optimización energética de arquitecturas heterogéneas con el framework gem5},
+  author={Horro, Marcos and Rodríguez, Gabriel and Touriño, Juan},
+  booktitle={Actas Jornadas Sarteco},
+  pages={509--516},
+  year={2016}
+}
+@inproceedings{horroarchitectural,
+  title={Architectural exploration of heterogeneous memory systems},
+  author={Horro, Marcos and Rodríguez, Gabriel and Touriño, Juan and Kandemir, Mahmut T},
+  booktitle={19th workshop on Compiler for Parallel Computing},
+  pages={1--8},
+  year={2016}
+}
+@inproceedings{horromat,
+  title={Actividades na Ensinanza Secundaria. Experiencia dun alumno no caso concreto de modelización de focos luminosos},
+  author={Búa, Jose B. and Horro, Marcos},
+  booktitle={VI Congreso de AGAPEMA},
+  pages={1--1},
+  year={2012}
+}
+</pre>
         </section>
-
-        <!-- Paintings Section-->
-        <section class="page-section" id="paintings">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase">Paintings</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+        <br>
+        <section id="education" class="mt-5">
+          <h3 class="display-5">Trajectory</h3>
+          <hr>
+          <ul class="timeline">
+            <li class="timeline">
+              <div class="timeline-badge warning"><i class="fas fa-briefcase"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">PhD Candidate</h4>
+                  <h5 class="timeline-subtitle">Computer Architecture Group</h5>
+                  <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Oct 2017 - present</small></p>
                 </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                <div class="timeline-body">
+                  <p><i class="fas fa-file-signature"></i> FPU fellowship</p>
                 </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-                        <i class="fas fa-download mr-2"></i>
-                        Free Download!
-                    </a>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge primary"><i class="fas fa-university"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">MSc Computer Engineering</h4>
+                  <h5 class="timeline-subtitle">University of A Coruña</h5>
+                  <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Oct 2016 - Feb 2018</small></p>
                 </div>
-            </div>
+                <div class="timeline-body">
+                  <p>90 credits course to complete my engineering studies</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline">
+              <div class="timeline-badge warning"><i class="fas fa-briefcase"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Research intern</h4>
+                  <h5 class="timeline-subtitle">Computer Architecture Group</h5>
+                  <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Jun 2016 - Sep 2017</small></p>
+                </div>
+                <div class="timeline-body">
+                  <p>Continuation of previous internship and working on topics related with <abbr title="high performance computing">HPC</abbr></p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline">
+              <div class="timeline-badge warning"><i class="fas fa-briefcase"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Internship</h4>
+                  <h5 class="timeline-subtitle">Department of Electronics and Systems</h5>
+                  <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Jan 2015 - Jun 2015</small></p>
+                </div>
+                <div class="timeline-body">
+                  <p>Competitive internship to collaborate in a department and initiate to research</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge primary"><i class="fas fa-university"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">BSc Computer Engineering</h4>
+                  <h5 class="timeline-subtitle">University of A Coruña</h5>
+                  <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Sep 2012 - Jun 2016</small></p>
+                </div>
+                <div class="timeline-body">
+                    Erasmus at <a href="https://www.chalmers.se/en/Pages/default.aspx">Chalmer University of Technology</a> from August 2015 to January 2016<br>
+                    <i class="fas fa-trophy"></i> Best student award of 2016 promotion<br>
+                    <i class="fas fa-trophy"></i> 10/10 Final Degree Project
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge primary"><i class="fas fa-university"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Science baccalaureate</h4>
+                  <h5 class="timeline-subtitle">IES Ramón Cabanillas</h5>
+                  <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> Sep 2010 - Jun 2012</small></p>
+                </div>
+                <div class="timeline-body">
+                    <i class="fas fa-trophy"></i> Best student award of 2012 promotion<br>
+                </div>
+              </div>
+            </li>
+        </ul>
         </section>
+      </div>
+    </div>
+    </main>
 
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Name</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Email Address</label>
-                                    <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Phone Number</label>
-                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <br />
-                            <div id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright © Your Website 2020</small></div>
-        </div>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed">
-            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Level-3 Support Chatbot</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"><i class="fas fa-university"></i> Universidade da Coruña. Grupo de Arquitectura de Computadores.</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bibtex.js"></script>
+<script type="text/javascript">
+ var init = function() {
+   bibtexify("#bibtex", "pubTable", {});
+ };
+ if (window.addEventListener) {
+   window.addEventListener('load', init, false);
+ } else if (window.attachEvent) {
+   window.attachEvent('onload', init);
+ }
+</script>
+<script>
+jQuery("#pubTable").on("click", "a", function(e) {
+  var $n = jQuery(this),
+      text = $n.text().toUpperCase();
+  if (text === "X") { return; }
+  try {
+    _gaq.push(['_trackEvent', "PublicationAction", text]);
+} catch(err){ }
+  if ($n.attr("href") !== "#") {
+    setTimeout(function() {
+      document.location.href = $n.attr("href");
+    }, 100);
+    return false;
+  }
+});
+</script>
+  </body>
 </html>
