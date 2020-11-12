@@ -8,7 +8,7 @@ the dependencies.
 
 ## Live demo
 
-I have used this style for my [personal webpage](http://gac.udc.es/~marcos.horro/)
+I have used this style for my [personal webpage](https://purvasingh96.github.io)
 
 ## Basic changes
 
