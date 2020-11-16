@@ -112,6 +112,7 @@ div.bibinfo pre { clear:both; }
 
 .kaggle {
   background-image: url(../img/kaggle_32.png);
+  background-size: 22px;
   width: 22px;
   height: 22px;
 }
