@@ -127,7 +127,7 @@ div.bibinfo pre { clear:both; }
 }
 
 .bg-udc {
-  background-color: #6d0a49 !important;
+  background-color: #5d4675 !important;
 }
 
 .display-5{font-size:2rem;font-weight:300;line-height:1.2}
@@ -144,12 +144,20 @@ div.bibinfo pre { clear:both; }
 .nav-link {
   color: #fff;
 }
-.nav-link:hover{
+/*.nav-link:hover{
   color: #ffa8d5;
 }
 
 a {
   color: #e10879;
+}*/
+
+.nav-link:hover{
+  color: #b8a8ff;
+}
+
+a {
+  color: #8336f7;
 }
 
 /* Sticky footer styles
