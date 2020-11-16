@@ -144,13 +144,6 @@ div.bibinfo pre { clear:both; }
 .nav-link {
   color: #fff;
 }
-/*.nav-link:hover{
-  color: #ffa8d5;
-}
-
-a {
-  color: #e10879;
-}*/
 
 .nav-link:hover{
   color: #ffa8d5;
@@ -159,6 +152,8 @@ a {
 a {
   color: #e10879;
 }
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
