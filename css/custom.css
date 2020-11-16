@@ -99,7 +99,7 @@ div.bibinfo pre { clear:both; }
   width: 22px;
   height: 22px;
 }
-..orcid {
+.orcid {
   background-image: url(../img/orcid.png);
   width: 22px;
   height: 22px;
