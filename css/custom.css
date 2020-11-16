@@ -127,7 +127,7 @@ div.bibinfo pre { clear:both; }
 }
 
 .bg-udc {
-  background-color: #5d4675 !important;
+  background-color: #6d0a49 !important;
 }
 
 .display-5{font-size:2rem;font-weight:300;line-height:1.2}
@@ -144,7 +144,6 @@ div.bibinfo pre { clear:both; }
 .nav-link {
   color: #fff;
 }
-
 .nav-link:hover{
   color: #ffa8d5;
 }
@@ -152,8 +151,6 @@ div.bibinfo pre { clear:both; }
 a {
   color: #e10879;
 }
-
-
 
 /* Sticky footer styles
 -------------------------------------------------- */
